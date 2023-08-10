@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.loader1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 16px solid #fff;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  border-right: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+.loader2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 16px solid #fff;
+  border-radius: 50%;
+  border-top: 16px solid #00cc00;
+  border-right: 16px solid #00cc00;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+.loader3 {
+  border: 16px solid #fff;
+  border-radius: 50%;
+  border-top: 16px solid #ff6600;
+  border-right: 16px solid #ff6600;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+
+<h2>How To Create A Loader</h2>
+
+<div class="loader1">
+<div class="loader2">
+<div class="loader3">
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
