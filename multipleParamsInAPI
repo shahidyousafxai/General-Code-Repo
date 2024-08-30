@@ -1,0 +1,16 @@
+ let queryParams = [];
+
+  if (name) {
+    queryParams.push(`name=${name}`);
+  }
+  if (zones !== undefined) {
+    queryParams.push(`zone=${zones}`);
+  }
+  if (status !== undefined) {
+    queryParams.push(`status=${status}`);
+  }
+
+  let endPoint = endPoints.fetchCampus;
+  if (queryParams.length > 0) {
+    endPoint += '?' + queryParams.join('&');
+  }
